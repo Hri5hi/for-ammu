@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+.sites-checkout/
+.sites-runtime/
+.unlazy/
+*.local
+.openai/
+.agents/
+.aws/
+.codex/
+GATES.md
+github-ready/

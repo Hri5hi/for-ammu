@@ -1,0 +1,35 @@
+{
+  "name": "ammus-little-universe",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build --configLoader runner",
+    "lint": "eslint src --max-warnings 0",
+    "test": "vitest run --configLoader runner",
+    "check": "npm run lint && npm run test && npm run build && echo 'all checks passed'",
+    "preview": "vite preview --configLoader runner --host 0.0.0.0"
+  },
+  "dependencies": {
+    "lucide-react": "0.468.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "8.22.0",
+    "@typescript-eslint/parser": "8.22.0",
+    "@vitejs/plugin-react": "5.1.1",
+    "@testing-library/react": "16.1.0",
+    "eslint": "9.39.5",
+    "eslint-plugin-react-hooks": "5.0.0",
+    "globals": "15.14.0",
+    "jsdom": "25.0.1",
+    "typescript": "5.7.3",
+    "vite": "7.3.6",
+    "vitest": "4.1.11"
+  }
+}
